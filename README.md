@@ -1,4 +1,4 @@
-##Intro
+# Intro
 
 
 Este es un proyecto y una guia de como se creo un invernadero hidroponico vertical con tecnologias asociadas a la nuve , control matematico PID , circuitos , iot , y sistemas de control.
