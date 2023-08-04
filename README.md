@@ -11,26 +11,26 @@ Integrar tecnología de vanguardia, como la hidroponía y la iluminación LED, j
 
 
 
-#Agricultura vertical
+## Agricultura vertical
 La agricultura vertical es una forma de aprovechar el entorno controlado de un edificio comercial moderno y convertirlo en una instalación apta para invernaderos. Al apilar las plantas verticalmente en estanterías o pilares altos, la agricultura vertical permite un mayor rendimiento para una superficie de terreno determinada.
 
-#Controlador PID
+## Controlador PID
 Los sistemas de control son omnipresentes en aplicaciones industriales, médicas, militares, de automoción, de servicios públicos y muchas otras, y a veces aparecen en nuestra vida cotidiana. Sin embargo, los hay de muchos tipos, de los cuales el control PID es sólo uno, aunque el más sofisticado.
 La nube de AWS
 Amazon Web Services (AWS) es la plataforma en la nube más completa y ampliamente adoptada del mundo, que ofrece más de 200 servicios con todas las funciones desde centros de datos de todo el mundo. Millones de clientes, entre los que se incluyen las startups de más rápido crecimiento, las empresas más grandes y las principales agencias gubernamentales, utilizan AWS para reducir costes, ser más ágiles e innovar con mayor rapidez.
 Implementación
 
 
-##Caracterización del sistema
+# Caracterización del sistema
 
-#Matlab
+## Matlab
 
 Con la ayuda de la herramienta Ident, se llevó a cabo la caracterización del sistema, utilizando la temperatura del sistema y la tensión aplicada a la resistencia como variables para ajustar la temperatura al punto de consigna deseado.
 
 
 Además, utilizando la herramienta de sintonización Simulink, fue posible encontrar los coeficientes para el control PID.
 
-#Circuito electrónico
+## Circuito electrónico
 
 El circuito consta de control de temperatura, la variable temperatura es leída por un sensor DHT11 debido a su alta resolución, Es leída por el Microcontrolador ESP32,. Como actuador, vamos a utilizar una bombilla que nos permite controlar la intensidad en un intento de gestionar la temperatura en el interior de un jardín vertical.
 
@@ -52,7 +52,7 @@ En la siguiente imagen se muestra la respuesta.
 
 
 
-#Resultados
+# Resultados
 
 Como resultado, el objetivo principal fue completado, y es posible enviar los datos a la nube en AWS, en la siguiente imagen es posible ver como los datos son subidos a la nube.
 
