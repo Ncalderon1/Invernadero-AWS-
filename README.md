@@ -65,4 +65,3 @@ En la siguiente imagen es posible ver el control de PWM en la señal AC, y la si
 
 En la última imagen, es posible ver el modelo que se realizó, que consta de dos plantas del cultivo vertical de fresas.
 
-Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
