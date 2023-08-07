@@ -67,5 +67,4 @@ En la siguiente imagen es posible ver el control de PWM en la señal AC, y la si
 
 
 En la última imagen, es posible ver el modelo que se realizó, que consta de dos plantas del cultivo vertical de fresas.
-![prototipo](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/533494b8-e7c9-47bf-82b0-61850d392735)
-
+![prototipo](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/221c1d0e-8e3f-4aa1-8d69-d27e4a42d3a7)
