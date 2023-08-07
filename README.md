@@ -39,6 +39,7 @@ En el circuito se utiliza un amplificador operacional que detecta el cruce con c
 La siguiente imagen muestra el circuito del esquema electrónico.
 ![circuito](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/886e7518-7b21-4563-8033-65870d554e71)
 
+
 #Control en Python
 
 Se desarrolló un programa en python que se configura con los coeficientes PID, la idea del programa es poder conectarse con los datos que se envían a la nube, de esta manera python se suscribe al tema que se genera cada vez que se envía un dato, y así mismo, el control en python ajusta el ancho de pulso que el microcontrolador(ESP32) enviará al circuito, para controlar la temperatura de la resistencia.
