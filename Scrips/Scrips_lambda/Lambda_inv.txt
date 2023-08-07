@@ -1,0 +1,83 @@
+import json
+import boto3
+from boto3.dynamodb.conditions import Key, Attr
+
+#########################################################################PID#######################################################################
+import PID
+import time
+import numpy as np
+from scipy.interpolate import make_interp_spline
+######################################Letura del dynamodb################################################################################################################
+client = boto3.client('iot-data', region_name='us-east-1')
+
+def lambda_handler(event, context):
+
+    dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+    table = dynamodb.Table('PID_trigers')
+    response = table.query( 
+        KeyConditionExpression=Key('sample_time').eq(1) & Key('device_id').gt(1669340103994) ,Limit = 10, ScanIndexForward=False
+    )
+    temp_list=[]
+    print(table)
+    items = response['Items']
+    for x in range(len(items)):
+        humedad=items[x]['device_data']['humidity']
+        temperatura=items[x]['device_data']['temperature']
+        temp_list.append(int(temperatura))
+   
+####################################################################PID###############################################################################
+   #valores PID
+    P = 0.364646206642451 # kp 1.2, 1, 0.001, L=50
+    I = 41.1588642323648 # ki
+    D =-5.19139077870066e-06 # kd
+    
+    L = len(temp_list)
+    
+    #SETUP pid
+    pid = PID.PID(P, I, D)
+
+    pid.SetPoint=30
+    pid.setSampleTime(0.0085)
+
+    END = L
+    for ñ in range(len(temp_list)):
+        feedback = temp_list[ñ]   
+    
+    
+    feedback_list = []
+    time_list = []
+    setpoint_list = []
+
+    for i in range(1, END):
+        pid.update(feedback)
+        output = pid.output
+        if pid.SetPoint > 0:
+            feedback += (output - (1/i))
+        
+        time.sleep(10)
+    
+        feedback_list.append(feedback)
+        setpoint_list.append(pid.SetPoint)
+        time_list.append(i)
+    
+    time_sm = np.array(time_list)
+    time_smooth = np.linspace(time_sm.min(), time_sm.max(), 300)
+    feedback_smooth = make_interp_spline(time_list, feedback_list)(time_smooth)
+   #######################################Publicaccion#############################################################################################################
+    # TODO implement
+    # Change topic, qos and payload
+    for ppq in range(4):
+        PIDS=feedback_list[ppq]
+        response = client.publish(
+            topic='esp32/1/pub',
+            qos=1,
+            payload=json.dumps({"x":PIDS})
+        )
+    
+    print(response)
+    ######################################################################################################################################################
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Published to topic')
+    }
