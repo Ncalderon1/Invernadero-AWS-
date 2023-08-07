@@ -6,6 +6,7 @@ Este es un proyecto y una guia de como se creo un invernadero hidroponico vertic
 Para el control climático en los invernaderos, se ha implementado un sistema controlado por PID (potencial integral derivativo). Este sistema se ejecuta en un servicio de AWS Lambda, que recopila los datos de los sensores instalados en el invernadero y calcula los ajustes necesarios para mantener un clima estable y favorable para el crecimiento de las plantas.
 
 Integrar tecnología de vanguardia, como la hidroponía y la iluminación LED, junto con un sistema de control climático basado en PID y alojado en AWS Lambda, ofrece numerosas ventajas en la agricultura urbana. Además de superar las dificultades asociadas con el espacio, el suelo y las condiciones ambientales, esta solución tecnológica promueve una producción más eficiente, sostenible y de mayor calidad en el cultivo de fresas y tomates en invernaderos urbanos. El uso de GitHub para compartir y colaborar en el desarrollo de este tipo de tecnologías permite que la comunidad agrícola y científica continúe impulsando la innovación en el sector y asegure un futuro más próspero para la agricultura urbana.
+![inver](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/12c66cd5-1b6f-4ddb-bc6d-969177c5cb24)
 
 ![IMG-20230601-WA0001](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/b677328b-ec61-4111-a694-924243945d95)
 
@@ -58,7 +59,7 @@ En la siguiente imagen se muestra la respuesta.
 ![PID](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/1d901a45-2a49-4089-893a-c1418b0c640a)
 
 
-# Resultados
+# Comunicacion
 
 Como resultado, el objetivo principal fue completado, y es posible enviar los datos a la nube en AWS, en la siguiente imagen es posible ver como los datos son subidos a la nube.
 
@@ -70,4 +71,5 @@ En la siguiente imagen es posible ver el control de PWM en la señal AC, y la si
 
 
 En la última imagen, es posible ver el modelo que se realizó, que consta de dos plantas del cultivo vertical de fresas.
-![prototipo](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/221c1d0e-8e3f-4aa1-8d69-d27e4a42d3a7)
+![invs](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/4c2117ca-6b57-473e-ae0c-742cc6452869)
+
