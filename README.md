@@ -26,7 +26,7 @@ Implementación
 ## Matlab
 
 Con la ayuda de la herramienta Ident, se llevó a cabo la caracterización del sistema, utilizando la temperatura del sistema y la tensión aplicada a la resistencia como variables para ajustar la temperatura al punto de consigna deseado.
-
+![pid_cong](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/046fa5d5-3ff2-4c87-8618-ca294de75e91)
 
 Además, utilizando la herramienta de sintonización Simulink, fue posible encontrar los coeficientes para el control PID.
 
@@ -40,17 +40,19 @@ La siguiente imagen muestra el circuito del esquema electrónico.
 ![circuito](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/886e7518-7b21-4563-8033-65870d554e71)
 
 
-#Control en Python
+## Control en Python
 
 Se desarrolló un programa en python que se configura con los coeficientes PID, la idea del programa es poder conectarse con los datos que se envían a la nube, de esta manera python se suscribe al tema que se genera cada vez que se envía un dato, y así mismo, el control en python ajusta el ancho de pulso que el microcontrolador(ESP32) enviará al circuito, para controlar la temperatura de la resistencia.
 
  En la siguiente imagen se muestra el código desarrollado.
+![pid_txt](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/92c1ce97-5f6f-4b56-9221-bbf419f6da2e)
+![pid_test](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/575e7c65-ec62-406d-9bfe-5113e00e15bb)
 
 
 
 
 En la siguiente imagen se muestra la respuesta.
-
+![PID](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/1d901a45-2a49-4089-893a-c1418b0c640a)
 
 
 # Resultados
@@ -61,7 +63,7 @@ Como resultado, el objetivo principal fue completado, y es posible enviar los da
 
 En la siguiente imagen es posible ver el control de PWM en la señal AC, y la sincronización con la señal de red.
 
-
+![ociloscopio](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/b2d17f6f-f40c-4da9-a69d-f28414857adb)
 
 
 En la última imagen, es posible ver el modelo que se realizó, que consta de dos plantas del cultivo vertical de fresas.
