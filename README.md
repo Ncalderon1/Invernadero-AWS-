@@ -7,12 +7,15 @@ Para el control climático en los invernaderos, se ha implementado un sistema co
 
 Integrar tecnología de vanguardia, como la hidroponía y la iluminación LED, junto con un sistema de control climático basado en PID y alojado en AWS Lambda, ofrece numerosas ventajas en la agricultura urbana. Además de superar las dificultades asociadas con el espacio, el suelo y las condiciones ambientales, esta solución tecnológica promueve una producción más eficiente, sostenible y de mayor calidad en el cultivo de fresas y tomates en invernaderos urbanos. El uso de GitHub para compartir y colaborar en el desarrollo de este tipo de tecnologías permite que la comunidad agrícola y científica continúe impulsando la innovación en el sector y asegure un futuro más próspero para la agricultura urbana.
 
-
+![IMG-20230601-WA0001](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/b677328b-ec61-4111-a694-924243945d95)
 
 
 
 ## Agricultura vertical
 La agricultura vertical es una forma de aprovechar el entorno controlado de un edificio comercial moderno y convertirlo en una instalación apta para invernaderos. Al apilar las plantas verticalmente en estanterías o pilares altos, la agricultura vertical permite un mayor rendimiento para una superficie de terreno determinada.
+
+![vertical](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/6017b2b2-bdf6-42bc-9f12-cc92f167f532)
+
 
 ## Controlador PID
 Los sistemas de control son omnipresentes en aplicaciones industriales, médicas, militares, de automoción, de servicios públicos y muchas otras, y a veces aparecen en nuestra vida cotidiana. Sin embargo, los hay de muchos tipos, de los cuales el control PID es sólo uno, aunque el más sofisticado.
