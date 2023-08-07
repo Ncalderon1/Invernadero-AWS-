@@ -37,7 +37,7 @@ El circuito consta de control de temperatura, la variable temperatura es leída 
 En el circuito se utiliza un amplificador operacional que detecta el cruce con cero, con la finalidad de sincronizar el PWM con la frecuencia de la red eléctrica. Para la alimentación se utiliza un optoacoplador que envía la señal al Triac para controlar la tensión sobre la resistencia.
 
 La siguiente imagen muestra el circuito del esquema electrónico.
-
+![circuito](https://github.com/Ncalderon1/Invernadero-AWS-/assets/82462335/886e7518-7b21-4563-8033-65870d554e71)
 
 #Control en Python
 
